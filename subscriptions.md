@@ -1,8 +1,6 @@
-# php-zoho-subscriptions
+##Zoho Subscriptions API
 
-Zoho Subscriptions API Client for PHP
-
-## Available API Methods
+### Available API Methods
 
 | Method             | [method]Endpoint     | Description    | Parameters |
 |--------------------|----------------------|----------------|------------|

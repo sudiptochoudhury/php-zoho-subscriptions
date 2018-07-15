@@ -1,13 +1,5 @@
 <?php
-
-namespace SudiptoChoudhury\Zoho\Subscriptions;
-
-use SudiptoChoudhury\Support\Forge\Api\Client as ApiForge;
-
-
-/**
- * Class Api
- *
+/** 
  * @method	array	getHostedpage(array $parameters)
  * @method	array	getHostedpages()
  * @method	array	addHostedpagesNewsubscription(array $parameters)
@@ -179,28 +171,4 @@ use SudiptoChoudhury\Support\Forge\Api\Client as ApiForge;
  * @method	array	getPricebooks()
  * @method	array	deleteOrganization(array $parameters)
  * @method	array	listingAllOrganizations()
- *
- * @inheritdoc
- *
- * @package SudiptoChoudhury\Zoho\Subscriptions
  */
-class Api extends ApiForge
-{
-
-    protected $DEFAULT_API_JSON_PATH = './config/subscriptions.json';
-    protected $DEFAULT_SOURCE_JSON_PATH = './config/postman.json';
-
-    protected $DEFAULTS = [
-        'authtoken' => '',
-        'zohoOrgId' => '',
-        'client' => [
-            'base_uri' => 'https://subscriptions.zoho.com/api/v1/',
-            'verify' => false,
-            'headers' => [
-                'Authorization' => 'Zoho-authtoken {{authtoken}}',
-                'X-com-zoho-subscriptions-organizationid' => "{{zohoOrgId}}",
-            ],
-        ],
-    ];
-
-}
