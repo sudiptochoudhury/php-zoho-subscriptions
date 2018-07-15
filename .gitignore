@@ -1,10 +1,6 @@
 composer.phar
 /vendor/
 # composer.lock
-
 .idea/
-tests/
-phpunit.xml
 composer.lock
-apitest.txt
 .phpunit.result.cache
