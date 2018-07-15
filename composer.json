@@ -1,0 +1,37 @@
+{
+    "name": "sudiptochoudhury/php-zoho-subscriptions",
+    "description": "PHP Client Library to Consume Zoho Subscriptions REST API",
+    "keywords":["zoho", "subscriptions", "php", "client", "rest", "api"],
+    "type": "library",
+    "homepage": "https://github.com/sudiptochoudhury/php-zoho-subscriptions",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sudipto Choudhury",
+            "homepage": "https://sudipto.net",
+            "email": "mail@sudipto.net",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "sudiptochoudhury/php-api-client-forge": "^0.0.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.2.0",
+        "mockery/mockery": "^1.1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "SudiptoChoudhury\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "extra": {
+    },
+    "minimum-stability": "dev"
+}
