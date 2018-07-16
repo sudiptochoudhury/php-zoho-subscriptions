@@ -15,7 +15,7 @@
     ],
     "require": {
         "php": ">=7.0.0",
-        "sudiptochoudhury/php-api-client-forge": "^0.0.7"
+        "sudiptochoudhury/php-api-client-forge": "^0.0.8"
     },
     "require-dev": {
         "phpunit/phpunit": "^7.2.0",

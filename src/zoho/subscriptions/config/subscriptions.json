@@ -152,9 +152,13 @@
         },
         "getTransactions": {
             "httpMethod": "GET",
-            "uri": "transactions",
+            "uri": "transactions?customer_id={customer_id}",
             "responseModel": "getResponse",
-            "parameters": []
+            "parameters": {
+                "customer_id": {
+                    "location": "uri"
+                }
+            }
         },
         "deleteCustomerComment": {
             "httpMethod": "DELETE",
@@ -171,9 +175,13 @@
         },
         "addCustomersMarkasactive": {
             "httpMethod": "POST",
-            "uri": "customers/markasactive",
+            "uri": "customers/markasactive?customer_ids={customer_ids}",
             "responseModel": "getResponse",
-            "parameters": []
+            "parameters": {
+                "customer_ids": {
+                    "location": "uri"
+                }
+            }
         },
         "addCustomerPaymentreminderDisable": {
             "httpMethod": "POST",
@@ -197,7 +205,7 @@
         },
         "getCustomers": {
             "httpMethod": "GET",
-            "uri": "customers",
+            "uri": "customers?filter_by=Status.All",
             "responseModel": "getResponse",
             "parameters": []
         },
@@ -313,9 +321,13 @@
         },
         "addCustomersMarkasinactive": {
             "httpMethod": "POST",
-            "uri": "customers/markasinactive",
+            "uri": "customers/markasinactive?customer_ids={customer_ids}",
             "responseModel": "getResponse",
-            "parameters": []
+            "parameters": {
+                "customer_ids": {
+                    "location": "uri"
+                }
+            }
         },
         "addCustomer": {
             "httpMethod": "POST",
@@ -386,9 +398,13 @@
         },
         "bulkDeleteCustomers": {
             "httpMethod": "DELETE",
-            "uri": "customers",
+            "uri": "customers?customer_ids={customer_ids}",
             "responseModel": "getResponse",
-            "parameters": []
+            "parameters": {
+                "customer_ids": {
+                    "location": "uri"
+                }
+            }
         },
         "addCustomerMarkasinactive": {
             "httpMethod": "POST",
@@ -489,7 +505,7 @@
         },
         "getProduct": {
             "httpMethod": "GET",
-            "uri": "products/{product_id}",
+            "uri": "products/{product_id}?showchild=true",
             "responseModel": "getResponse",
             "parameters": {
                 "product_id": {
@@ -509,7 +525,7 @@
         },
         "getProducts": {
             "httpMethod": "GET",
-            "uri": "products",
+            "uri": "products?filter_by=ProductStatus.All",
             "responseModel": "getResponse",
             "parameters": []
         },
@@ -535,9 +551,13 @@
         },
         "bulkDeleteSalesperons": {
             "httpMethod": "DELETE",
-            "uri": "salespersons",
+            "uri": "salespersons?salesperson_ids={salesperson_ids}",
             "responseModel": "getResponse",
-            "parameters": []
+            "parameters": {
+                "salesperson_ids": {
+                    "location": "uri"
+                }
+            }
         },
         "getSalespersons": {
             "httpMethod": "GET",
@@ -743,15 +763,23 @@
         },
         "bulkDeleteCreditnotes": {
             "httpMethod": "DELETE",
-            "uri": "creditnotes",
+            "uri": "creditnotes?creditnote_ids={creditnote_ids}",
             "responseModel": "getResponse",
-            "parameters": []
+            "parameters": {
+                "creditnote_ids": {
+                    "location": "uri"
+                }
+            }
         },
         "getPlans": {
             "httpMethod": "GET",
-            "uri": "plans",
+            "uri": "plans?product_id={product_id}&filter_by=PlanStatus.All",
             "responseModel": "getResponse",
-            "parameters": []
+            "parameters": {
+                "product_id": {
+                    "location": "uri"
+                }
+            }
         },
         "updatePlan": {
             "httpMethod": "PUT",
@@ -884,7 +912,7 @@
         },
         "listingAllPlans": {
             "httpMethod": "GET",
-            "uri": "plans",
+            "uri": "plans?filter_by=PlanStatus.All",
             "responseModel": "getResponse",
             "parameters": []
         },
@@ -975,9 +1003,13 @@
         },
         "addSubscriptionsBulkcancel": {
             "httpMethod": "POST",
-            "uri": "subscriptions/bulkcancel",
+            "uri": "subscriptions/bulkcancel?subscription_ids={subscription_ids}",
             "responseModel": "getResponse",
-            "parameters": []
+            "parameters": {
+                "subscription_ids": {
+                    "location": "uri"
+                }
+            }
         },
         "addSubscriptionLineitem": {
             "httpMethod": "POST",
@@ -1033,7 +1065,7 @@
         },
         "getSubscriptions": {
             "httpMethod": "GET",
-            "uri": "subscriptions",
+            "uri": "subscriptions?filter_by=SubscriptionStatus.All",
             "responseModel": "getResponse",
             "parameters": []
         },
@@ -1375,7 +1407,7 @@
         },
         "addSubscriptionCancel": {
             "httpMethod": "POST",
-            "uri": "subscriptions/{subscription_id}/cancel",
+            "uri": "subscriptions/{subscription_id}/cancel?cancel_at_end=false",
             "responseModel": "getResponse",
             "parameters": {
                 "subscription_id": {
@@ -1447,9 +1479,13 @@
         },
         "listingAllSubscriptionsOfAParticularCustomer": {
             "httpMethod": "GET",
-            "uri": "subscriptions",
+            "uri": "subscriptions?filter_by=SubscriptionStatus.All&customer_id={customer_id}",
             "responseModel": "getResponse",
-            "parameters": []
+            "parameters": {
+                "customer_id": {
+                    "location": "uri"
+                }
+            }
         },
         "addEditDescriptionForAnAddOnInLineItemsList": {
             "httpMethod": "POST",
@@ -1479,7 +1515,7 @@
         },
         "cancellingASubscriptionAtTheEndOfTerm": {
             "httpMethod": "POST",
-            "uri": "subscriptions/{subscription_id}/cancel",
+            "uri": "subscriptions/{subscription_id}/cancel?cancel_at_end=true",
             "responseModel": "getResponse",
             "parameters": {
                 "subscription_id": {
@@ -1731,7 +1767,7 @@
         },
         "getCoupons": {
             "httpMethod": "GET",
-            "uri": "coupons",
+            "uri": "coupons?filter_by=CouponStatus.All",
             "responseModel": "getResponse",
             "parameters": []
         },
@@ -1769,7 +1805,7 @@
         },
         "getEvents": {
             "httpMethod": "GET",
-            "uri": "events",
+            "uri": "events?filter_by=EventTime.All",
             "responseModel": "getResponse",
             "parameters": []
         },
@@ -2257,15 +2293,19 @@
         },
         "getAddons": {
             "httpMethod": "GET",
-            "uri": "addons",
+            "uri": "addons?filter_by=AddonStatus.All",
             "responseModel": "getResponse",
             "parameters": []
         },
         "listAllAddOnsOfAProduct": {
             "httpMethod": "GET",
-            "uri": "addons",
+            "uri": "addons?product_id={product_id}&filter_by=AddonStatus.All",
             "responseModel": "getResponse",
-            "parameters": []
+            "parameters": {
+                "product_id": {
+                    "location": "uri"
+                }
+            }
         },
         "creatingAnAddonOfTierType": {
             "httpMethod": "POST",
@@ -2407,9 +2447,13 @@
         },
         "listAllAddOnsAssociatedToAPlan": {
             "httpMethod": "GET",
-            "uri": "addons",
+            "uri": "addons?plan_code={plan_code}&filter_by=AddonStatus.All",
             "responseModel": "getResponse",
-            "parameters": []
+            "parameters": {
+                "plan_code": {
+                    "location": "uri"
+                }
+            }
         },
         "creatingAnAddonOfVolumeType": {
             "httpMethod": "POST",
@@ -2518,7 +2562,7 @@
         },
         "downloadAnInvoiceAsAPdfFile": {
             "httpMethod": "GET",
-            "uri": "invoices/{invoice_id}",
+            "uri": "invoices/{invoice_id}?accept=pdf",
             "responseModel": "getResponse",
             "parameters": {
                 "invoice_id": {
@@ -2528,13 +2572,17 @@
         },
         "addInvoicesSent": {
             "httpMethod": "POST",
-            "uri": "invoices/sent",
+            "uri": "invoices/sent?invoice_ids={invoice_ids}",
             "responseModel": "getResponse",
-            "parameters": []
+            "parameters": {
+                "invoice_ids": {
+                    "location": "uri"
+                }
+            }
         },
         "getInvoices": {
             "httpMethod": "GET",
-            "uri": "invoices",
+            "uri": "invoices?filter_by=Status.All",
             "responseModel": "getResponse",
             "parameters": []
         },

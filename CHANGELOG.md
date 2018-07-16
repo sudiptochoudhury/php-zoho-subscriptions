@@ -6,5 +6,11 @@
 
 ### 0.0.2
 - Generate and update documentation
+
+### 0.0.3
+- Update API forge version
+- Generate and update cleaner documentation
+ 
+ 
  
  
