@@ -25,6 +25,7 @@ $resultJson = $subscriptions->addCustomer($data); // create a customer
 
 $resultJson = $subscriptions->addSubscription($data); // create a subscription
  
+ 
 ```
 <a name="install"/>
 
@@ -43,27 +44,27 @@ $resultJson = $subscriptions->addSubscription($data); // create a subscription
 You can install the library via [Composer](http://getcomposer.org) by adding the following line to the 
 **require** block of your *composer.json* file (replace dev-master with latest stable version):
 
-````
+```
 "sudiptochoudhury/php-zoho-subscriptions": "dev-master"
-````
+```
 
 or run the following command:
 
-````
+```
 composer require sudiptochoudhury/php-zoho-subscriptions
-````
+```
 
 <a name="setting-up"/>
 
 ## Setting up
 
 All you need to do is to retrieve from your Zoho account and set the AuthToken and Organization ID in the constructor. 
-````php
+```php
 new Api([
     'authtoken' => '<<Zoho Subscriptions Auth Token>>', // https://accounts.zoho.com/apiauthtoken/nb/create
     'zohoOrgId' => '<<Zoho Organization ID>>',
 ]);
-````
+```
 
 <a name="how-to"/>
 
@@ -74,14 +75,15 @@ are to be passed as an associative array. The required list of parameters can be
 table or you may get more details going to the original Zoho Subscription API documentation.
 
 Examples:
-````php
+```php
 $resultJson = $subscriptions->getOrganizations(); 
 
 $resultJson = $subscriptions->addCustomer(['display_name'=> 'Sudipto Choudhury', 'email'=> 'mail@sudipto.net']); // create a customer
-
-````
+```
 
 ### Available API Methods
+
+<small>
 
 | Method & Endpoint | Parameters | Description |
 |-------------------|------------|-------------|
@@ -256,3 +258,5 @@ addInvoiceCredits(array)<br/> \[POST\] /invoices/{invoice_id}/credits  | invoice
 getPricebooks()<br/> \[GET\] /pricebooks  |  | *Retreiving list of all pricebooks* |
 deleteOrganization(array)<br/> \[DELETE\] /organizations/{organization_id}  | organization_id | *Deleting a particular Organization*<br/>**PlaceHolders to be replaced :**<br/> `organization_id` |
 listingAllOrganizations()<br/> \[GET\] /organizations  |  | *Retieving Details of all Organizations* |
+
+</small>
