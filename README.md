@@ -1,6 +1,85 @@
 # php-zoho-subscriptions
 
+[![Latest Stable Version](https://poser.pugx.org/sudiptochoudhury/php-zoho-subscriptions/version)](https://packagist.org/packages/sudiptochoudhury/php-zoho-subscriptions)
+[![Latest Unstable Version](https://poser.pugx.org/sudiptochoudhury/php-zoho-subscriptions/v/unstable)](//packagist.org/packages/sudiptochoudhury/php-zoho-subscriptions)
+[![License](https://poser.pugx.org/sudiptochoudhury/php-zoho-subscriptions/license)](https://packagist.org/packages/sudiptochoudhury/php-zoho-subscriptions)
+[![Total Downloads](https://poser.pugx.org/sudiptochoudhury/php-zoho-subscriptions/downloads)](https://packagist.org/packages/sudiptochoudhury/php-zoho-subscriptions)
+[![composer.lock available](https://poser.pugx.org/sudiptochoudhury/php-zoho-subscriptions/composerlock)](https://packagist.org/packages/sudiptochoudhury/php-zoho-subscriptions)
+
+
 Zoho Subscriptions API Client for PHP
+
+```php
+
+use SudiptoChoudhury\Zoho\Subscriptions\Api;
+
+...
+
+$subscriptions = new Api([
+                'authtoken' => '<<Zoho Subscriptions Auth Token>>', // https://accounts.zoho.com/apiauthtoken/nb/create
+                'zohoOrgId' => '<<Zoho Organization ID>>',
+            ]);
+
+
+$resultJson = $subscriptions->addCustomer($data); // create a customer
+
+$resultJson = $subscriptions->addSubscription($data); // create a subscription
+ 
+```
+<a name="install"/>
+
+## Installation
+
+<a name="requirements"/>
+
+### Requirements
+
+- Any flavour of PHP 7.0+ should do
+
+<a name="install-composer"/>
+
+### Install With Composer
+
+You can install the library via [Composer](http://getcomposer.org) by adding the following line to the 
+**require** block of your *composer.json* file (replace dev-master with latest stable version):
+
+````
+"sudiptochoudhury/php-zoho-subscriptions": "dev-master"
+````
+
+or run the following command:
+
+````
+composer require sudiptochoudhury/php-zoho-subscriptions
+````
+
+<a name="setting-up"/>
+
+## Setting up
+
+All you need to do is to retrieve from your Zoho account and set the AuthToken and Organization ID in the constructor. 
+````php
+new Api([
+    'authtoken' => '<<Zoho Subscriptions Auth Token>>', // https://accounts.zoho.com/apiauthtoken/nb/create
+    'zohoOrgId' => '<<Zoho Organization ID>>',
+]);
+````
+
+<a name="how-to"/>
+
+## How to use
+
+Next, call the desired method from the table given below. In some methods you may need to pass parameters. The parameters
+are to be passed as an associative array. The required list of parameters can be found in the parameters column of the
+table or you may get more details going to the original Zoho Subscription API documentation.
+
+Examples:
+````php
+$resultJson = $subscriptions->getOrganizations(); 
+
+$resultJson = $subscriptions->addCustomer(['display_name'=> 'Sudipto Choudhury', 'email'=> 'mail@sudipto.net']); // create a customer
+
+````
 
 ### Available API Methods
 

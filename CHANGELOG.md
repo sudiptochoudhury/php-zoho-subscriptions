@@ -23,3 +23,6 @@
 
 ### 0.0.7
 - Generate and update cleaner documentation
+
+### 0.0.8
+- Release help documentation
