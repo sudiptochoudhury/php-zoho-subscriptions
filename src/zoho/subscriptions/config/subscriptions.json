@@ -205,9 +205,14 @@
         },
         "getCustomers": {
             "httpMethod": "GET",
-            "uri": "customers?filter_by=Status.All",
+            "uri": "customers?filter_by={filter_by}",
             "responseModel": "getResponse",
-            "parameters": []
+            "parameters": {
+                "filter_by": {
+                    "location": "uri",
+                    "default": "Status.All"
+                }
+            }
         },
         "getCustomer": {
             "httpMethod": "GET",
@@ -505,11 +510,15 @@
         },
         "getProduct": {
             "httpMethod": "GET",
-            "uri": "products/{product_id}?showchild=true",
+            "uri": "products/{product_id}?showchild={showchild}",
             "responseModel": "getResponse",
             "parameters": {
                 "product_id": {
                     "location": "uri"
+                },
+                "showchild": {
+                    "location": "uri",
+                    "default": "true"
                 }
             }
         },
@@ -525,9 +534,14 @@
         },
         "getProducts": {
             "httpMethod": "GET",
-            "uri": "products?filter_by=ProductStatus.All",
+            "uri": "products?filter_by={filter_by}",
             "responseModel": "getResponse",
-            "parameters": []
+            "parameters": {
+                "filter_by": {
+                    "location": "uri",
+                    "default": "ProductStatus.All"
+                }
+            }
         },
         "markAProductAsInactive": {
             "httpMethod": "POST",
@@ -773,11 +787,15 @@
         },
         "getPlans": {
             "httpMethod": "GET",
-            "uri": "plans?product_id={product_id}&filter_by=PlanStatus.All",
+            "uri": "plans?product_id={product_id}&filter_by={filter_by}",
             "responseModel": "getResponse",
             "parameters": {
                 "product_id": {
                     "location": "uri"
+                },
+                "filter_by": {
+                    "location": "uri",
+                    "default": "PlanStatus.All"
                 }
             }
         },
@@ -912,9 +930,14 @@
         },
         "listingAllPlans": {
             "httpMethod": "GET",
-            "uri": "plans?filter_by=PlanStatus.All",
+            "uri": "plans?filter_by={filter_by}",
             "responseModel": "getResponse",
-            "parameters": []
+            "parameters": {
+                "filter_by": {
+                    "location": "uri",
+                    "default": "PlanStatus.All"
+                }
+            }
         },
         "addSubscriptionNotes": {
             "httpMethod": "POST",
@@ -1065,9 +1088,14 @@
         },
         "getSubscriptions": {
             "httpMethod": "GET",
-            "uri": "subscriptions?filter_by=SubscriptionStatus.All",
+            "uri": "subscriptions?filter_by={filter_by}",
             "responseModel": "getResponse",
-            "parameters": []
+            "parameters": {
+                "filter_by": {
+                    "location": "uri",
+                    "default": "SubscriptionStatus.All"
+                }
+            }
         },
         "addSubscriptionAutocollect": {
             "httpMethod": "POST",
@@ -1407,11 +1435,15 @@
         },
         "addSubscriptionCancel": {
             "httpMethod": "POST",
-            "uri": "subscriptions/{subscription_id}/cancel?cancel_at_end=false",
+            "uri": "subscriptions/{subscription_id}/cancel?cancel_at_end={cancel_at_end}",
             "responseModel": "getResponse",
             "parameters": {
                 "subscription_id": {
                     "location": "uri"
+                },
+                "cancel_at_end": {
+                    "location": "uri",
+                    "default": "false"
                 }
             }
         },
@@ -1479,9 +1511,13 @@
         },
         "listingAllSubscriptionsOfAParticularCustomer": {
             "httpMethod": "GET",
-            "uri": "subscriptions?filter_by=SubscriptionStatus.All&customer_id={customer_id}",
+            "uri": "subscriptions?filter_by={filter_by}&customer_id={customer_id}",
             "responseModel": "getResponse",
             "parameters": {
+                "filter_by": {
+                    "location": "uri",
+                    "default": "SubscriptionStatus.All"
+                },
                 "customer_id": {
                     "location": "uri"
                 }
@@ -1515,11 +1551,15 @@
         },
         "cancellingASubscriptionAtTheEndOfTerm": {
             "httpMethod": "POST",
-            "uri": "subscriptions/{subscription_id}/cancel?cancel_at_end=true",
+            "uri": "subscriptions/{subscription_id}/cancel?cancel_at_end={cancel_at_end}",
             "responseModel": "getResponse",
             "parameters": {
                 "subscription_id": {
                     "location": "uri"
+                },
+                "cancel_at_end": {
+                    "location": "uri",
+                    "default": "true"
                 }
             }
         },
@@ -1767,9 +1807,14 @@
         },
         "getCoupons": {
             "httpMethod": "GET",
-            "uri": "coupons?filter_by=CouponStatus.All",
+            "uri": "coupons?filter_by={filter_by}",
             "responseModel": "getResponse",
-            "parameters": []
+            "parameters": {
+                "filter_by": {
+                    "location": "uri",
+                    "default": "CouponStatus.All"
+                }
+            }
         },
         "getCoupon": {
             "httpMethod": "GET",
@@ -1805,9 +1850,14 @@
         },
         "getEvents": {
             "httpMethod": "GET",
-            "uri": "events?filter_by=EventTime.All",
+            "uri": "events?filter_by={filter_by}",
             "responseModel": "getResponse",
-            "parameters": []
+            "parameters": {
+                "filter_by": {
+                    "location": "uri",
+                    "default": "EventTime.All"
+                }
+            }
         },
         "addPayment": {
             "httpMethod": "POST",
@@ -2293,17 +2343,26 @@
         },
         "getAddons": {
             "httpMethod": "GET",
-            "uri": "addons?filter_by=AddonStatus.All",
+            "uri": "addons?filter_by={filter_by}",
             "responseModel": "getResponse",
-            "parameters": []
+            "parameters": {
+                "filter_by": {
+                    "location": "uri",
+                    "default": "AddonStatus.All"
+                }
+            }
         },
         "listAllAddOnsOfAProduct": {
             "httpMethod": "GET",
-            "uri": "addons?product_id={product_id}&filter_by=AddonStatus.All",
+            "uri": "addons?product_id={product_id}&filter_by={filter_by}",
             "responseModel": "getResponse",
             "parameters": {
                 "product_id": {
                     "location": "uri"
+                },
+                "filter_by": {
+                    "location": "uri",
+                    "default": "AddonStatus.All"
                 }
             }
         },
@@ -2447,11 +2506,15 @@
         },
         "listAllAddOnsAssociatedToAPlan": {
             "httpMethod": "GET",
-            "uri": "addons?plan_code={plan_code}&filter_by=AddonStatus.All",
+            "uri": "addons?plan_code={plan_code}&filter_by={filter_by}",
             "responseModel": "getResponse",
             "parameters": {
                 "plan_code": {
                     "location": "uri"
+                },
+                "filter_by": {
+                    "location": "uri",
+                    "default": "AddonStatus.All"
                 }
             }
         },
@@ -2562,11 +2625,15 @@
         },
         "downloadAnInvoiceAsAPdfFile": {
             "httpMethod": "GET",
-            "uri": "invoices/{invoice_id}?accept=pdf",
+            "uri": "invoices/{invoice_id}?accept={accept}",
             "responseModel": "getResponse",
             "parameters": {
                 "invoice_id": {
                     "location": "uri"
+                },
+                "accept": {
+                    "location": "uri",
+                    "default": "pdf"
                 }
             }
         },
@@ -2582,9 +2649,14 @@
         },
         "getInvoices": {
             "httpMethod": "GET",
-            "uri": "invoices?filter_by=Status.All",
+            "uri": "invoices?filter_by={filter_by}",
             "responseModel": "getResponse",
-            "parameters": []
+            "parameters": {
+                "filter_by": {
+                    "location": "uri",
+                    "default": "Status.All"
+                }
+            }
         },
         "addInvoiceSalesperson": {
             "httpMethod": "POST",

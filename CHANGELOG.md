@@ -11,6 +11,7 @@
 - Update API forge version
 - Generate and update cleaner documentation
  
- 
- 
- 
+### 0.0.4
+- Update API forge version
+- Generate and update cleaner documentation
+

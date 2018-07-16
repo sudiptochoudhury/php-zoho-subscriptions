@@ -12,7 +12,7 @@
  * @method	array	addCustomersMarkasactive(array $parameters)	Bulk marking multiple customers as active
  * @method	array	addCustomerPaymentreminderDisable(array $parameters)	Disabling payment reminder for a particular customer
  * @method	array	addCustomerMarkasactive(array $parameters)	Marking a particular customer as active
- * @method	array	getCustomers()	Retrieving details of all the customers
+ * @method	array	getCustomers(array $parameters)	Retrieving details of all the customers
  * @method	array	getCustomer(array $parameters)	Retrieving details of a particular customer
  * @method	array	getCustomerComments(array $parameters)	Retrieving comments of a particular customer
  * @method	array	updateCustomer(array $parameters)	Updating the details of a particular customer
@@ -30,7 +30,7 @@
  * @method	array	addProduct(array $parameters)	Creating a new product
  * @method	array	getProduct(array $parameters)	Retreiving details of a product
  * @method	array	addProductMarkasinactive(array $parameters)	Marking a particular product as active
- * @method	array	getProducts()	List of all Products
+ * @method	array	getProducts(array $parameters)	List of all Products
  * @method	array	markAProductAsInactive(array $parameters)	Marking a particular product as inactive
  * @method	array	deleteSalesperson(array $parameters)	Delete an existing salesperson
  * @method	array	bulkDeleteSalesperons(array $parameters)	Bulk delete multiple sales persons
@@ -56,7 +56,7 @@
  * @method	array	addPlanMarkasactive(array $parameters)	Marking a plan as active
  * @method	array	getPlan(array $parameters)	Retreiving details of a particular plan
  * @method	array	deletePlan(array $parameters)	Delete an existing plan. A plan can only be deleted if it has no transactions associated with it.
- * @method	array	listingAllPlans()	Listing all the plans
+ * @method	array	listingAllPlans(array $parameters)	Listing all the plans
  * @method	array	addSubscriptionNotes(array $parameters)	Notes related to a particular subscription can be added by any user at any time
  * @method	array	addSubscriptionReactivate(array $parameters)	Reactivating a subscription Only a subscription which is in
  * @method	array	deleteSubscriptionNote(array $parameters)	Delete a specific note associated to a particular subscription
@@ -66,7 +66,7 @@
  * @method	array	deleteSubscriptionCard(array $parameters)	Delete a card associated with the subscription. Once removed, the subscription will become an offline subscription.
  * @method	array	updateSubscription(array $parameters)	Updating the details of a particular subscription
  * @method	array	addSubscriptionBankaccount(array $parameters)	Associate an existing bank account/Update to an existing bank account with a subscription
- * @method	array	getSubscriptions()	Listing all the subscriptions
+ * @method	array	getSubscriptions(array $parameters)	Listing all the subscriptions
  * @method	array	addSubscriptionAutocollect(array $parameters)	Change a particular subscription to online mode
  * @method	array	getSubscription(array $parameters)	Getting the details about a particular subscription
  * @method	array	addSubscriptionBuyonetimeaddon(array $parameters)	Include a one-time addon to a particular subscription
@@ -106,12 +106,12 @@
  * @method	array	updateCoupon(array $parameters)	Updating the details of a particular coupon
  * @method	array	addCouponMarkasinactive(array $parameters)	Marking a coupon as inactive
  * @method	array	addCoupon(array $parameters)	Creating a new coupon
- * @method	array	getCoupons()	Retrieving details of all coupons
+ * @method	array	getCoupons(array $parameters)	Retrieving details of all coupons
  * @method	array	getCoupon(array $parameters)	Retrieving details of a particular coupon
  * @method	array	getOrganizations()	The Postman collection for the Zoho Subscriptions API contains the basic endpoints which are required to get started with the app. You can find the complete API documentation for Zoho Subscriptions . You can also use our to get familiar with the UI. The following are the prerequisites for using this collection. - You should have at least one organization in . -
  * @method	array	get()	Lists all resources API endpoint of Zoho Subscriptions
  * @method	array	getEvent(array $parameters)	Retrieving details of an existing event
- * @method	array	getEvents()	Retrieving list of all events
+ * @method	array	getEvents(array $parameters)	Retrieving list of all events
  * @method	array	addPayment(array $parameters)	Recording a new offline payment for a customer
  * @method	array	getPayment(array $parameters)	Retrieve details of a particular payment
  * @method	array	addPaymentRefunds(array $parameters)	A new credit note is created for the amount to be refund. Refund is then made for the credit note.
@@ -133,7 +133,7 @@
  * @method	array	addAddonMarkasactive(array $parameters)	Marking an addon as active
  * @method	array	addAddon(array $parameters)	Creating a new addon of
  * @method	array	getAddon(array $parameters)	Getting the Details of a particular add-on
- * @method	array	getAddons()	Listing all the add-ons
+ * @method	array	getAddons(array $parameters)	Listing all the add-ons
  * @method	array	listAllAddOnsOfAProduct(array $parameters)	Listing all the add-ons of a particular product
  * @method	array	creatingAnAddonOfTierType(array $parameters)	Creating a new addon of
  * @method	array	creatingAnAddonOfUnitType(array $parameters)	Creating a new addon of
@@ -147,7 +147,7 @@
  * @method	array	getInvoice(array $parameters)	Retrieve details of an existing invoice
  * @method	array	downloadAnInvoiceAsAPdfFile(array $parameters)	Download a particular invoice as a pdf file
  * @method	array	addInvoicesSent(array $parameters)	Bulk making invoices as Sent
- * @method	array	getInvoices()	List of all invoices
+ * @method	array	getInvoices(array $parameters)	List of all invoices
  * @method	array	addInvoiceSalesperson(array $parameters)	Update sales person for a particular invoice
  * @method	array	addInvoiceComments(array $parameters)	Add comments to an invoice
  * @method	array	addInvoicePaymentreminderEnable(array $parameters)	Enabling payment reminder for a particular invoice
