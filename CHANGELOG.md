@@ -17,3 +17,6 @@
 
 ### 0.0.5
 - Generate and update cleaner documentation
+
+### 0.0.6
+- Generate and update cleaner documentation
