@@ -16,7 +16,7 @@
             "responseModel": "getResponse",
             "parameters": []
         },
-        "addHostedpagesNewsubscription": {
+        "addNewSubscriptionHostedpages": {
             "httpMethod": "POST",
             "uri": "hostedpages/newsubscription",
             "responseModel": "getResponse",
@@ -53,7 +53,7 @@
                 }
             }
         },
-        "creatingHostedPageForANewSubscriptionForANewCustomer": {
+        "addNewCustomerNewSubscriptionHostedpages": {
             "httpMethod": "POST",
             "uri": "hostedpages/newsubscription",
             "responseModel": "getResponse",
@@ -84,7 +84,7 @@
                 }
             }
         },
-        "addHostedpagesUpdatecard": {
+        "addUpdateCardHostedpages": {
             "httpMethod": "POST",
             "uri": "hostedpages/updatecard",
             "responseModel": "getResponse",
@@ -100,7 +100,7 @@
                 }
             }
         },
-        "addHostedpagesBuyonetimeaddon": {
+        "addOnetimeAddonHostedpages": {
             "httpMethod": "POST",
             "uri": "hostedpages/buyonetimeaddon",
             "responseModel": "getResponse",
@@ -119,7 +119,7 @@
                 }
             }
         },
-        "addHostedpagesUpdatesubscription": {
+        "addUpdateSubscriptionHostedpages": {
             "httpMethod": "POST",
             "uri": "hostedpages/updatesubscription",
             "responseModel": "getResponse",
@@ -173,7 +173,7 @@
                 }
             }
         },
-        "addCustomersMarkasactive": {
+        "activateCustomers": {
             "httpMethod": "POST",
             "uri": "customers/markasactive?customer_ids={customer_ids}",
             "responseModel": "getResponse",
@@ -183,7 +183,7 @@
                 }
             }
         },
-        "addCustomerPaymentreminderDisable": {
+        "disableCustomerPaymentReminder": {
             "httpMethod": "POST",
             "uri": "customers/{customer_id}/paymentreminder/disable",
             "responseModel": "getResponse",
@@ -193,7 +193,7 @@
                 }
             }
         },
-        "addCustomerMarkasactive": {
+        "activateCustomer": {
             "httpMethod": "POST",
             "uri": "customers/{customer_id}/markasactive",
             "responseModel": "getResponse",
@@ -314,7 +314,7 @@
                 }
             }
         },
-        "getCustomerUnusedcredits": {
+        "getCustomerUnusedCredits": {
             "httpMethod": "GET",
             "uri": "customers/{customer_id}/unusedcredits",
             "responseModel": "getResponse",
@@ -324,7 +324,7 @@
                 }
             }
         },
-        "addCustomersMarkasinactive": {
+        "deactivateCustomers": {
             "httpMethod": "POST",
             "uri": "customers/markasinactive?customer_ids={customer_ids}",
             "responseModel": "getResponse",
@@ -401,7 +401,7 @@
                 }
             }
         },
-        "bulkDeleteCustomers": {
+        "deleteCustomers": {
             "httpMethod": "DELETE",
             "uri": "customers?customer_ids={customer_ids}",
             "responseModel": "getResponse",
@@ -411,7 +411,7 @@
                 }
             }
         },
-        "addCustomerMarkasinactive": {
+        "deactivateCustomer": {
             "httpMethod": "POST",
             "uri": "customers/{customer_id}/markasinactive",
             "responseModel": "getResponse",
@@ -421,7 +421,7 @@
                 }
             }
         },
-        "addCustomerPaymentreminderEnable": {
+        "enableCustomerPaymentReminder": {
             "httpMethod": "POST",
             "uri": "customers/{customer_id}/paymentreminder/enable",
             "responseModel": "getResponse",
@@ -444,7 +444,7 @@
                 }
             }
         },
-        "deleteCustomerPaypalaccount": {
+        "deleteCustomerPaypalAccount": {
             "httpMethod": "DELETE",
             "uri": "customers/{customer_id}/paypalaccounts/{paypal_id}",
             "responseModel": "getResponse",
@@ -522,9 +522,9 @@
                 }
             }
         },
-        "addProductMarkasinactive": {
+        "activateProduct": {
             "httpMethod": "POST",
-            "uri": "products/{product_id}/markasinactive",
+            "uri": "products/{product_id}/markasactive",
             "responseModel": "getResponse",
             "parameters": {
                 "product_id": {
@@ -543,7 +543,7 @@
                 }
             }
         },
-        "markAProductAsInactive": {
+        "deactivateProduct": {
             "httpMethod": "POST",
             "uri": "products/{product_id}/markasinactive",
             "responseModel": "getResponse",
@@ -553,7 +553,7 @@
                 }
             }
         },
-        "deleteSalesperson": {
+        "deleteSalesPerson": {
             "httpMethod": "DELETE",
             "uri": "salespersons/{salesperson_id}",
             "responseModel": "getResponse",
@@ -563,7 +563,7 @@
                 }
             }
         },
-        "bulkDeleteSalesperons": {
+        "deleteSalesPersons": {
             "httpMethod": "DELETE",
             "uri": "salespersons?salesperson_ids={salesperson_ids}",
             "responseModel": "getResponse",
@@ -573,7 +573,7 @@
                 }
             }
         },
-        "getSalespersons": {
+        "getSalesPersons": {
             "httpMethod": "GET",
             "uri": "salespersons",
             "responseModel": "getResponse",
@@ -615,7 +615,7 @@
                 }
             }
         },
-        "getCreditnotesRefund": {
+        "getRefundCreditnote": {
             "httpMethod": "GET",
             "uri": "creditnotes/refunds/{refund_id}",
             "responseModel": "getResponse",
@@ -689,7 +689,7 @@
                 }
             }
         },
-        "addCreditnoteConverttoopen": {
+        "openVoidCreditnote": {
             "httpMethod": "POST",
             "uri": "creditnotes/{creditnote_id}/converttoopen",
             "responseModel": "getResponse",
@@ -699,7 +699,7 @@
                 }
             }
         },
-        "addCreditnoteVoid": {
+        "voidCreditnote": {
             "httpMethod": "POST",
             "uri": "creditnotes/{creditnote_id}/void",
             "responseModel": "getResponse",
@@ -719,7 +719,7 @@
                 }
             }
         },
-        "addCreditnoteCustomfields": {
+        "addCreditnoteCustomFields": {
             "httpMethod": "POST",
             "uri": "creditnotes/{creditnote_id}/customfields",
             "responseModel": "getResponse",
@@ -775,7 +775,7 @@
                 }
             }
         },
-        "bulkDeleteCreditnotes": {
+        "deleteCreditnotes": {
             "httpMethod": "DELETE",
             "uri": "creditnotes?creditnote_ids={creditnote_ids}",
             "responseModel": "getResponse",
@@ -785,7 +785,7 @@
                 }
             }
         },
-        "getPlans": {
+        "getPlansForProduct": {
             "httpMethod": "GET",
             "uri": "plans?product_id={product_id}&filter_by={filter_by}",
             "responseModel": "getResponse",
@@ -888,7 +888,7 @@
                 }
             }
         },
-        "addPlanMarkasinactive": {
+        "deactivatePlan": {
             "httpMethod": "POST",
             "uri": "plans/{plan_code}/markasinactive",
             "responseModel": "getResponse",
@@ -898,7 +898,7 @@
                 }
             }
         },
-        "addPlanMarkasactive": {
+        "activatePlan": {
             "httpMethod": "POST",
             "uri": "plans/{plan_code}/markasactive",
             "responseModel": "getResponse",
@@ -928,7 +928,7 @@
                 }
             }
         },
-        "listingAllPlans": {
+        "getPlans": {
             "httpMethod": "GET",
             "uri": "plans?filter_by={filter_by}",
             "responseModel": "getResponse",
@@ -952,7 +952,7 @@
                 }
             }
         },
-        "addSubscriptionReactivate": {
+        "reactivateSubscription": {
             "httpMethod": "POST",
             "uri": "subscriptions/{subscription_id}/reactivate",
             "responseModel": "getResponse",
@@ -1024,7 +1024,7 @@
                 }
             }
         },
-        "addSubscriptionsBulkcancel": {
+        "cancelSubscriptions": {
             "httpMethod": "POST",
             "uri": "subscriptions/bulkcancel?subscription_ids={subscription_ids}",
             "responseModel": "getResponse",
@@ -1034,7 +1034,7 @@
                 }
             }
         },
-        "addSubscriptionLineitem": {
+        "addSubscriptionLineItem": {
             "httpMethod": "POST",
             "uri": "subscriptions/{subscription_id}/lineitems/{plan_code}",
             "responseModel": "getResponse",
@@ -1070,7 +1070,7 @@
                 }
             }
         },
-        "addSubscriptionBankaccount": {
+        "addSubscriptionBankAccount": {
             "httpMethod": "POST",
             "uri": "subscriptions/{subscription_id}/bankaccount",
             "responseModel": "getResponse",
@@ -1097,7 +1097,7 @@
                 }
             }
         },
-        "addSubscriptionAutocollect": {
+        "setSubscriptionOnline": {
             "httpMethod": "POST",
             "uri": "subscriptions/{subscription_id}/autocollect",
             "responseModel": "getResponse",
@@ -1106,7 +1106,8 @@
                     "location": "uri"
                 },
                 "auto_collect": {
-                    "location": "json"
+                    "location": "json",
+                    "default": "true"
                 }
             }
         },
@@ -1120,7 +1121,7 @@
                 }
             }
         },
-        "addSubscriptionBuyonetimeaddon": {
+        "addSubscriptionOnetimeAddon": {
             "httpMethod": "POST",
             "uri": "subscriptions/{subscription_id}/buyonetimeaddon",
             "responseModel": "getResponse",
@@ -1139,7 +1140,7 @@
                 }
             }
         },
-        "creatingAnOfflineSubscriptionForAnExistingCustomer": {
+        "addOfflineSubscription": {
             "httpMethod": "POST",
             "uri": "subscriptions",
             "responseModel": "getResponse",
@@ -1178,7 +1179,8 @@
                     "location": "json"
                 },
                 "auto_collect": {
-                    "location": "json"
+                    "location": "json",
+                    "default": "false"
                 },
                 "payment_gateways": {
                     "location": "json"
@@ -1208,7 +1210,7 @@
                 }
             }
         },
-        "getSubscriptionScheduledchanges": {
+        "getSubscriptionScheduledChanges": {
             "httpMethod": "GET",
             "uri": "subscriptions/{subscription_id}/scheduledchanges",
             "responseModel": "getResponse",
@@ -1234,7 +1236,7 @@
                 }
             }
         },
-        "getSubscriptionRecentactivities": {
+        "getSubscriptionRecentActivities": {
             "httpMethod": "GET",
             "uri": "subscriptions/{subscription_id}/recentactivities",
             "responseModel": "getResponse",
@@ -1254,7 +1256,7 @@
                 }
             }
         },
-        "deleteSubscriptionScheduledchanges": {
+        "deleteSubscriptionScheduledChanges": {
             "httpMethod": "DELETE",
             "uri": "subscriptions/{subscription_id}/scheduledchanges",
             "responseModel": "getResponse",
@@ -1264,7 +1266,7 @@
                 }
             }
         },
-        "addSubscriptionCustomfields": {
+        "addSubscriptionCustomFields": {
             "httpMethod": "POST",
             "uri": "subscriptions/{subscription_id}/customfields",
             "responseModel": "getResponse",
@@ -1277,7 +1279,7 @@
                 }
             }
         },
-        "associateUpdateBankAccountToANewBankAccount": {
+        "addSubscriptionNewBankAccount": {
             "httpMethod": "POST",
             "uri": "subscriptions/{subscription_id}/bankaccount",
             "responseModel": "getResponse",
@@ -1339,7 +1341,7 @@
                 }
             }
         },
-        "changeToOfflineMode": {
+        "setSubscriptionOffline": {
             "httpMethod": "POST",
             "uri": "subscriptions/{subscription_id}/autocollect",
             "responseModel": "getResponse",
@@ -1348,11 +1350,12 @@
                     "location": "uri"
                 },
                 "auto_collect": {
-                    "location": "json"
+                    "location": "json",
+                    "default": "false"
                 }
             }
         },
-        "associateUpdateCardToANewCard": {
+        "updateSubscriptionCard": {
             "httpMethod": "POST",
             "uri": "subscriptions/{subscription_id}/card",
             "responseModel": "getResponse",
@@ -1368,7 +1371,7 @@
                 }
             }
         },
-        "addSubscriptionCharge": {
+        "addSubscriptionOnetimeCharge": {
             "httpMethod": "POST",
             "uri": "subscriptions/{subscription_id}/charge",
             "responseModel": "getResponse",
@@ -1384,7 +1387,7 @@
                 }
             }
         },
-        "creatingASubscriptionForANewCustomer": {
+        "addNewCustomerSubscription": {
             "httpMethod": "POST",
             "uri": "subscriptions",
             "responseModel": "getResponse",
@@ -1433,7 +1436,7 @@
                 }
             }
         },
-        "addSubscriptionCancel": {
+        "cancelSubscriptionImmediately": {
             "httpMethod": "POST",
             "uri": "subscriptions/{subscription_id}/cancel?cancel_at_end={cancel_at_end}",
             "responseModel": "getResponse",
@@ -1447,7 +1450,7 @@
                 }
             }
         },
-        "addSubscriptionPaypalaccount": {
+        "addSubscriptionPaypalAccount": {
             "httpMethod": "POST",
             "uri": "subscriptions/{subscription_id}/paypalaccount",
             "responseModel": "getResponse",
@@ -1460,7 +1463,7 @@
                 }
             }
         },
-        "addSubscriptionPostpone": {
+        "postponeSubscription": {
             "httpMethod": "POST",
             "uri": "subscriptions/{subscription_id}/postpone",
             "responseModel": "getResponse",
@@ -1473,7 +1476,7 @@
                 }
             }
         },
-        "deleteSubscriptionBankaccount": {
+        "deleteSubscriptionBankAccount": {
             "httpMethod": "DELETE",
             "uri": "subscriptions/{subscription_id}/bankaccount",
             "responseModel": "getResponse",
@@ -1483,7 +1486,7 @@
                 }
             }
         },
-        "addSubscriptionContactpersons": {
+        "addSubscriptionContactPersons": {
             "httpMethod": "POST",
             "uri": "subscriptions/{subscription_id}/contactpersons",
             "responseModel": "getResponse",
@@ -1509,7 +1512,7 @@
                 }
             }
         },
-        "listingAllSubscriptionsOfAParticularCustomer": {
+        "getCustomersSubscriptions": {
             "httpMethod": "GET",
             "uri": "subscriptions?filter_by={filter_by}&customer_id={customer_id}",
             "responseModel": "getResponse",
@@ -1523,7 +1526,7 @@
                 }
             }
         },
-        "addEditDescriptionForAnAddOnInLineItemsList": {
+        "addSubscriptionAddonLineItem": {
             "httpMethod": "POST",
             "uri": "subscriptions/{subscription_id}/lineitems/{addon_code}",
             "responseModel": "getResponse",
@@ -1549,7 +1552,7 @@
                 }
             }
         },
-        "cancellingASubscriptionAtTheEndOfTerm": {
+        "cancelSubscriptionAtEnd": {
             "httpMethod": "POST",
             "uri": "subscriptions/{subscription_id}/cancel?cancel_at_end={cancel_at_end}",
             "responseModel": "getResponse",
@@ -1563,7 +1566,7 @@
                 }
             }
         },
-        "addSubscriptionSalesperson": {
+        "addSubscriptionSalesPerson": {
             "httpMethod": "POST",
             "uri": "subscriptions/{subscription_id}/salesperson",
             "responseModel": "getResponse",
@@ -1707,7 +1710,7 @@
                 }
             }
         },
-        "addCouponMarkasactive": {
+        "activateCoupon": {
             "httpMethod": "POST",
             "uri": "coupons/{coupon_code}/markasactive",
             "responseModel": "getResponse",
@@ -1749,7 +1752,7 @@
                 }
             }
         },
-        "addCouponMarkasinactive": {
+        "deactivateCoupon": {
             "httpMethod": "POST",
             "uri": "coupons/{coupon_code}/markasinactive",
             "responseModel": "getResponse",
@@ -1825,12 +1828,6 @@
                     "location": "uri"
                 }
             }
-        },
-        "getOrganizations": {
-            "httpMethod": "GET",
-            "uri": "organizations",
-            "responseModel": "getResponse",
-            "parameters": []
         },
         "get": {
             "httpMethod": "GET",
@@ -1938,12 +1935,12 @@
                 }
             }
         },
-        "updateCustomFieldsForPayment": {
+        "addProductCustomFields": {
             "httpMethod": "POST",
-            "uri": "creditnotes/{creditnote_id}/customfields",
+            "uri": "products/{product_id}/customfields",
             "responseModel": "getResponse",
             "parameters": {
-                "creditnote_id": {
+                "product_id": {
                     "location": "uri"
                 },
                 "custom_fields": {
@@ -2013,7 +2010,7 @@
             "responseModel": "getResponse",
             "parameters": []
         },
-        "updateCustomerContactperson": {
+        "updateCustomerContactPerson": {
             "httpMethod": "PUT",
             "uri": "customers/{customer_id}/contactpersons/{contactperson_id}",
             "responseModel": "getResponse",
@@ -2056,7 +2053,7 @@
                 }
             }
         },
-        "addCustomerContactpersons": {
+        "addCustomerContactPersons": {
             "httpMethod": "POST",
             "uri": "customers/{customer_id}/contactpersons",
             "responseModel": "getResponse",
@@ -2096,7 +2093,7 @@
                 }
             }
         },
-        "getCustomerContactpersons": {
+        "getCustomerContactPersons": {
             "httpMethod": "GET",
             "uri": "customers/{customer_id}/contactpersons",
             "responseModel": "getResponse",
@@ -2106,7 +2103,7 @@
                 }
             }
         },
-        "addCustomerContactpersonPrimary": {
+        "addCustomerPrimaryContactPerson": {
             "httpMethod": "POST",
             "uri": "customers/{customer_id}/contactpersons/{contactperson_id}/primary",
             "responseModel": "getResponse",
@@ -2146,7 +2143,7 @@
                 }
             }
         },
-        "deleteCustomerContactperson": {
+        "deleteCustomerContactPerson": {
             "httpMethod": "DELETE",
             "uri": "customers/{customer_id}/contactpersons/{contactperson_id}",
             "responseModel": "getResponse",
@@ -2159,7 +2156,7 @@
                 }
             }
         },
-        "getCustomerContactperson": {
+        "getCustomerContactPerson": {
             "httpMethod": "GET",
             "uri": "customers/{customer_id}/contactpersons/{contactperson_id}",
             "responseModel": "getResponse",
@@ -2172,7 +2169,7 @@
                 }
             }
         },
-        "deleteCustomerBankaccount": {
+        "deleteCustomerBankAccount": {
             "httpMethod": "DELETE",
             "uri": "customers/{customer_id}/bankaccounts/{account_id}",
             "responseModel": "getResponse",
@@ -2185,7 +2182,7 @@
                 }
             }
         },
-        "updateCustomerBankaccount": {
+        "updateCustomerBankAccount": {
             "httpMethod": "PUT",
             "uri": "customers/{customer_id}/bankaccounts/{account_id}",
             "responseModel": "getResponse",
@@ -2225,7 +2222,7 @@
                 }
             }
         },
-        "addCustomerBankaccounts": {
+        "addCustomerBankAccounts": {
             "httpMethod": "POST",
             "uri": "customers/{customer_id}/bankaccounts",
             "responseModel": "getResponse",
@@ -2262,7 +2259,7 @@
                 }
             }
         },
-        "getCustomerBankaccount": {
+        "getCustomerBankAccount": {
             "httpMethod": "GET",
             "uri": "customers/{customer_id}/bankaccounts/{account_id}",
             "responseModel": "getResponse",
@@ -2275,7 +2272,7 @@
                 }
             }
         },
-        "addAddonMarkasactive": {
+        "activateAddon": {
             "httpMethod": "POST",
             "uri": "addons/{addon_code}/markasactive",
             "responseModel": "getResponse",
@@ -2312,7 +2309,8 @@
                     "location": "json"
                 },
                 "pricing_scheme": {
-                    "location": "json"
+                    "location": "json",
+                    "default": "package"
                 },
                 "price_brackets": {
                     "location": "json"
@@ -2352,7 +2350,7 @@
                 }
             }
         },
-        "listAllAddOnsOfAProduct": {
+        "getProductAddons": {
             "httpMethod": "GET",
             "uri": "addons?product_id={product_id}&filter_by={filter_by}",
             "responseModel": "getResponse",
@@ -2366,7 +2364,7 @@
                 }
             }
         },
-        "creatingAnAddonOfTierType": {
+        "addTireAddon": {
             "httpMethod": "POST",
             "uri": "addons",
             "responseModel": "getResponse",
@@ -2390,7 +2388,8 @@
                     "location": "json"
                 },
                 "pricing_scheme": {
-                    "location": "json"
+                    "location": "json",
+                    "default": "tire"
                 },
                 "unit_name": {
                     "location": "json"
@@ -2412,7 +2411,7 @@
                 }
             }
         },
-        "creatingAnAddonOfUnitType": {
+        "addUnitAddon": {
             "httpMethod": "POST",
             "uri": "addons",
             "responseModel": "getResponse",
@@ -2436,7 +2435,8 @@
                     "location": "json"
                 },
                 "pricing_scheme": {
-                    "location": "json"
+                    "location": "json",
+                    "default": "unit"
                 },
                 "unit_name": {
                     "location": "json"
@@ -2504,7 +2504,7 @@
                 }
             }
         },
-        "listAllAddOnsAssociatedToAPlan": {
+        "getPlanAddons": {
             "httpMethod": "GET",
             "uri": "addons?plan_code={plan_code}&filter_by={filter_by}",
             "responseModel": "getResponse",
@@ -2518,7 +2518,7 @@
                 }
             }
         },
-        "creatingAnAddonOfVolumeType": {
+        "addVolumeAddon": {
             "httpMethod": "POST",
             "uri": "addons",
             "responseModel": "getResponse",
@@ -2542,7 +2542,8 @@
                     "location": "json"
                 },
                 "pricing_scheme": {
-                    "location": "json"
+                    "location": "json",
+                    "default": "volume"
                 },
                 "unit_name": {
                     "location": "json"
@@ -2574,7 +2575,7 @@
                 }
             }
         },
-        "addAddonMarkasinactive": {
+        "deactivateAddon": {
             "httpMethod": "POST",
             "uri": "addons/{addon_code}/markasinactive",
             "responseModel": "getResponse",
@@ -2623,7 +2624,7 @@
                 }
             }
         },
-        "downloadAnInvoiceAsAPdfFile": {
+        "downloadInvoiceAsPdf": {
             "httpMethod": "GET",
             "uri": "invoices/{invoice_id}?accept={accept}",
             "responseModel": "getResponse",
@@ -2637,7 +2638,7 @@
                 }
             }
         },
-        "addInvoicesSent": {
+        "setInvoicesAsSent": {
             "httpMethod": "POST",
             "uri": "invoices/sent?invoice_ids={invoice_ids}",
             "responseModel": "getResponse",
@@ -2658,7 +2659,7 @@
                 }
             }
         },
-        "addInvoiceSalesperson": {
+        "addInvoiceSalesPerson": {
             "httpMethod": "POST",
             "uri": "invoices/{invoice_id}/salesperson",
             "responseModel": "getResponse",
@@ -2684,7 +2685,7 @@
                 }
             }
         },
-        "addInvoicePaymentreminderEnable": {
+        "enableInvoicePaymentReminder": {
             "httpMethod": "POST",
             "uri": "invoices/{invoice_id}/paymentreminder/enable",
             "responseModel": "getResponse",
@@ -2694,7 +2695,7 @@
                 }
             }
         },
-        "addInvoiceSent": {
+        "setInvoiceAsSent": {
             "httpMethod": "POST",
             "uri": "invoices/{invoice_id}/sent",
             "responseModel": "getResponse",
@@ -2704,7 +2705,7 @@
                 }
             }
         },
-        "addInvoiceConvertoopen": {
+        "openInvoice": {
             "httpMethod": "POST",
             "uri": "invoices/{invoice_id}/convertoopen",
             "responseModel": "getResponse",
@@ -2714,7 +2715,7 @@
                 }
             }
         },
-        "getInvoiceRecentactivities": {
+        "getInvoiceRecentActivities": {
             "httpMethod": "GET",
             "uri": "invoices/{invoice_id}/recentactivities",
             "responseModel": "getResponse",
@@ -2724,7 +2725,7 @@
                 }
             }
         },
-        "emailAnInvoice": {
+        "emailInvoice": {
             "httpMethod": "POST",
             "uri": "invoices/{invoice_id}/email",
             "responseModel": "getResponse",
@@ -2759,7 +2760,7 @@
                 }
             }
         },
-        "addInvoiceCustomfields": {
+        "addInvoiceCustomFields": {
             "httpMethod": "POST",
             "uri": "invoices/{invoice_id}/customfields",
             "responseModel": "getResponse",
@@ -2772,7 +2773,7 @@
                 }
             }
         },
-        "addInvoicePaymentreminderDisable": {
+        "disableInvoicePaymentReminder": {
             "httpMethod": "POST",
             "uri": "invoices/{invoice_id}/paymentreminder/disable",
             "responseModel": "getResponse",
@@ -2782,7 +2783,7 @@
                 }
             }
         },
-        "getBankaccountPendinginvoices": {
+        "getBankAccountPendingInvoices": {
             "httpMethod": "GET",
             "uri": "bankaccounts/{account_id}/pendinginvoices",
             "responseModel": "getResponse",
@@ -2802,7 +2803,7 @@
                 }
             }
         },
-        "addInvoiceWriteoff": {
+        "writeoffInvoice": {
             "httpMethod": "POST",
             "uri": "invoices/{invoice_id}/writeoff",
             "responseModel": "getResponse",
@@ -2812,7 +2813,7 @@
                 }
             }
         },
-        "addInvoiceCancelwriteoff": {
+        "cancelInvoiceWriteoff": {
             "httpMethod": "POST",
             "uri": "invoices/{invoice_id}/cancelwriteoff",
             "responseModel": "getResponse",
@@ -2822,7 +2823,7 @@
                 }
             }
         },
-        "deleteInvoiceCreditsapplied": {
+        "deleteInvoiceCreditsApplied": {
             "httpMethod": "DELETE",
             "uri": "invoices/{invoice_id}/creditsapplied/{creditnotes_invoice_id}",
             "responseModel": "getResponse",
@@ -2845,7 +2846,7 @@
                 }
             }
         },
-        "collectChargeWithBankAccount": {
+        "addBankAccountCharge": {
             "httpMethod": "POST",
             "uri": "invoices/{invoice_id}/collect",
             "responseModel": "getResponse",
@@ -2858,7 +2859,7 @@
                 }
             }
         },
-        "addInvoicePaymentdate": {
+        "setInvoicePaymentDate": {
             "httpMethod": "POST",
             "uri": "invoices/{invoice_id}/paymentdate",
             "responseModel": "getResponse",
@@ -2874,7 +2875,7 @@
                 }
             }
         },
-        "addInvoiceVoid": {
+        "voidInvoice": {
             "httpMethod": "POST",
             "uri": "invoices/{invoice_id}/void",
             "responseModel": "getResponse",
@@ -2913,7 +2914,7 @@
                 }
             }
         },
-        "listingAllOrganizations": {
+        "getOrganizations": {
             "httpMethod": "GET",
             "uri": "organizations",
             "responseModel": "getResponse",

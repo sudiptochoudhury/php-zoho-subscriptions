@@ -26,3 +26,8 @@
 
 ### 0.0.8
 - Release help documentation
+
+### 0.0.9
+- Enhanced API names
+- Pass default values in some calls
+- Better documentation 
