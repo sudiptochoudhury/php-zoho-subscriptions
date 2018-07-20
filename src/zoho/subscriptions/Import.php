@@ -248,4 +248,13 @@ class Import extends ParentImport
 
         return $value;
     }
+
+    public function filterDocMDDescription($value, $helperData = [])
+    {
+        /** @var $apiName */
+        extract($helperData);
+        $value = str_replace('\|', '  \|  ', $value);
+
+        return $value;
+    }
 }
