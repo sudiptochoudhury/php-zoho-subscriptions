@@ -30,4 +30,7 @@
 ### 0.0.9
 - Enhanced API names
 - Pass default values in some calls
-- Better documentation 
+- Better documentation
+
+### 0.1.0
+- Update parameter default values fixes   
