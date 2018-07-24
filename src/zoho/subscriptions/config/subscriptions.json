@@ -1436,7 +1436,7 @@
                 }
             }
         },
-        "cancelSubscriptionImmediately": {
+        "cancelSubscriptionNow": {
             "httpMethod": "POST",
             "uri": "subscriptions/{subscription_id}/cancel?cancel_at_end={cancel_at_end}",
             "responseModel": "getResponse",
@@ -1552,7 +1552,7 @@
                 }
             }
         },
-        "cancelSubscriptionAtEnd": {
+        "cancelSubscription": {
             "httpMethod": "POST",
             "uri": "subscriptions/{subscription_id}/cancel?cancel_at_end={cancel_at_end}",
             "responseModel": "getResponse",

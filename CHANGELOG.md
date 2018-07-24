@@ -34,3 +34,6 @@
 
 ### 0.1.0
 - Update parameter default values fixes   
+
+### 0.1.1
+- Function name update for cancelSubscription

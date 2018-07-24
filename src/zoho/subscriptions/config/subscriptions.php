@@ -85,7 +85,7 @@
  * @method	array	updateSubscriptionCard(array $parameters)	Associate/Update card with a new card for a particular subscription
  * @method	array	addSubscriptionOnetimeCharge(array $parameters)	Charge a one-time amount for a subscription
  * @method	array	addNewCustomerSubscription(array $parameters)	Creating a subscription for a new customer This works as a
- * @method	array	cancelSubscriptionImmediately(array $parameters)	Cancelling the subscription immediately
+ * @method	array	cancelSubscriptionNow(array $parameters)	Cancelling the subscription immediately
  * @method	array	addSubscriptionPaypalAccount(array $parameters)	Associate/Update PayPal account with an existing PayPal account for a particular subscription
  * @method	array	postponeSubscription(array $parameters)	Renewal date refers to the billing date of the subsequent term. You can postpone date of renewal of the subscription by specifying an appropriate date on which the customer should be billed. No prorated charges will be applied. Billing date for the subscription will be replaced by the date which you provide
  * @method	array	deleteSubscriptionBankAccount(array $parameters)	Delete a bank account associated with the subscription. Once removed, the subscription will become an offline subscription.
@@ -94,7 +94,7 @@
  * @method	array	getCustomersSubscriptions(array $parameters)	Listing all the subscriptions
  * @method	array	addSubscriptionAddonLineItem(array $parameters)	Add/Edit description to a particular add-on in the line items list
  * @method	array	deleteSubscriptionCoupons(array $parameters)	To remove coupon associated with a subscription
- * @method	array	cancelSubscriptionAtEnd(array $parameters)	Cancelling the subscription at the end of term of subscription
+ * @method	array	cancelSubscription(array $parameters)	Cancelling the subscription at the end of term of subscription
  * @method	array	addSubscriptionSalesPerson(array $parameters)	Update sales person associated with a particular subscription
  * @method	array	getCustomerCard(array $parameters)	Retrieving details of a particular card for a particular customer
  * @method	array	deleteCustomerCard(array $parameters)	To delete a particular credit card for a customer

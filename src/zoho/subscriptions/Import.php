@@ -59,7 +59,7 @@ class Import extends ParentImport
             '_addSubscriptionBankAccount' => 'addSubscriptionNewBankAccount',
             '_setSubscriptionOnline' => 'setSubscriptionOffline',
             '_addSubscriptionLineItem' => 'addSubscriptionAddonLineItem',
-            '_cancelSubscriptionImmediately' => 'cancelSubscriptionAtEnd',
+            '_cancelSubscriptionNow' => 'cancelSubscription',
         ];
 
         $apiName = $overwriteMatches[$apiName] ?? $overwriteMatches[strtolower($apiName)] ?? $apiName;
@@ -188,7 +188,7 @@ class Import extends ParentImport
             "addsubscriptionpostpone" => "postponeSubscription",
             "listingallsubscriptionsofaparticularcustomer" => "getCustomersSubscriptions",
             "addeditdescriptionforanaddoninlineitemslist" => "setAddOnLineItemDescription",
-            "addsubscriptioncancel" => "cancelSubscriptionImmediately",
+            "addsubscriptioncancel" => "cancelSubscriptionNow",
             "addcouponmarkasactive" => "activateCoupon",
             "addcouponmarkasinactive" => "deactivateCoupon",
             "addcustomercontactpersonprimary" => "addCustomerPrimaryContactPerson",
