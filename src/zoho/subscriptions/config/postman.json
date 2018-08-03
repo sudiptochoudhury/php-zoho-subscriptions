@@ -299,7 +299,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://{{domain-url}}/api/v1/transactions?customer_id={customer_id}",
+							"raw": "https://{{domain-url}}/api/v1/transactions?filter_by=TransactionType.ALL&customer_id={customer_id}",
 							"protocol": "https",
 							"host": [
 								"{{domain-url}}"
@@ -313,6 +313,10 @@
 								{
 									"key": "customer_id",
 									"value": "{customer_id}"
+								},
+								{
+									"key": "filter_by",
+									"value": "TransactionType.ALL"
 								}
 							]
 						},

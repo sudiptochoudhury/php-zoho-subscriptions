@@ -4,3 +4,4 @@ composer.phar
 .idea/
 composer.lock
 .phpunit.result.cache
+src/zoho/subscriptions/config/backup/

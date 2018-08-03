@@ -152,11 +152,15 @@
         },
         "getTransactions": {
             "httpMethod": "GET",
-            "uri": "transactions?customer_id={customer_id}",
+            "uri": "transactions?customer_id={customer_id}&filter_by={filter_by}",
             "responseModel": "getResponse",
             "parameters": {
                 "customer_id": {
                     "location": "uri"
+                },
+                "filter_by": {
+                    "location": "uri",
+                    "default": "TransactionType.ALL"
                 }
             }
         },
