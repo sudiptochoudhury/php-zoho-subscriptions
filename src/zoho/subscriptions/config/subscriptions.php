@@ -49,14 +49,14 @@
  * @method	array	addCreditnoteCustomFields(array $parameters)	Updating custom fields for a credit note You can update custom fields only if they are configured
  * @method	array	addCreditnote(array $parameters)	Creating a Credit note for particular customer
  * @method	array	deleteCreditnotes(array $parameters)	Delete an existing credit note refund
- * @method	array	getPlansForProduct(array $parameters)	Listing all the plans for a specific product
+ * @method	array	getProductPlans(array $parameters)	Listing all the plans for a specific product
  * @method	array	updatePlan(array $parameters)	Updating the details of a particular plan
  * @method	array	addPlan(array $parameters)	Creating a new plan
  * @method	array	deactivatePlan(array $parameters)	Marking a plan as inactive
  * @method	array	activatePlan(array $parameters)	Marking a plan as active
  * @method	array	getPlan(array $parameters)	Retreiving details of a particular plan
  * @method	array	deletePlan(array $parameters)	Delete an existing plan. A plan can only be deleted if it has no transactions associated with it.
- * @method	array	getPlans(array $parameters)	Listing all the plans
+ * @method	array	_getProductPlans(array $parameters)	Listing all the plans
  * @method	array	addSubscriptionNotes(array $parameters)	Notes related to a particular subscription can be added by any user at any time
  * @method	array	reactivateSubscription(array $parameters)	Reactivating a subscription Only a subscription which is in
  * @method	array	deleteSubscriptionNote(array $parameters)	Delete a specific note associated to a particular subscription

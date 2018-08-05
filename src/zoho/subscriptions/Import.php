@@ -173,7 +173,7 @@ class Import extends ParentImport
             "addcreditnoteconverttoopen" => "openVoidCreditnote",
             "bulkdeletecreditnotes" => "deleteCreditnotes",
             "addcreditnotevoid" => "voidCreditnote",
-            "getplans" => "getPlansForProduct",
+            "getplans" => "getProductPlans",
             "addplanmarkasinactive" => "deactivatePlan",
             "addplanmarkasactive" => "activatePlan",
             "addsubscriptionreactivate" => "reactivateSubscription",

@@ -789,7 +789,7 @@
                 }
             }
         },
-        "getPlansForProduct": {
+        "getProductPlans": {
             "httpMethod": "GET",
             "uri": "plans?product_id={product_id}&filter_by={filter_by}",
             "responseModel": "getResponse",
@@ -932,7 +932,7 @@
                 }
             }
         },
-        "getPlans": {
+        "_getProductPlans": {
             "httpMethod": "GET",
             "uri": "plans?filter_by={filter_by}",
             "responseModel": "getResponse",
@@ -1092,12 +1092,15 @@
         },
         "getSubscriptions": {
             "httpMethod": "GET",
-            "uri": "subscriptions?filter_by={filter_by}",
+            "uri": "subscriptions?filter_by={filter_by}&customer_id={customer_id}",
             "responseModel": "getResponse",
             "parameters": {
                 "filter_by": {
                     "location": "uri",
                     "default": "SubscriptionStatus.All"
+                },
+                "customer_id": {
+                    "location": "uri"
                 }
             }
         },
@@ -1814,12 +1817,15 @@
         },
         "getCoupons": {
             "httpMethod": "GET",
-            "uri": "coupons?filter_by={filter_by}",
+            "uri": "coupons?filter_by={filter_by}&product_id={product_id}",
             "responseModel": "getResponse",
             "parameters": {
                 "filter_by": {
                     "location": "uri",
                     "default": "CouponStatus.All"
+                },
+                "product_id": {
+                    "location": "uri"
                 }
             }
         },
@@ -2345,18 +2351,24 @@
         },
         "getAddons": {
             "httpMethod": "GET",
-            "uri": "addons?filter_by={filter_by}",
+            "uri": "addons?filter_by={filter_by}&product_id={product_id}&plan_code={plan_code}",
             "responseModel": "getResponse",
             "parameters": {
                 "filter_by": {
                     "location": "uri",
                     "default": "AddonStatus.All"
+                },
+                "product_id": {
+                    "location": "uri"
+                },
+                "plan_code": {
+                    "location": "uri"
                 }
             }
         },
         "getProductAddons": {
             "httpMethod": "GET",
-            "uri": "addons?product_id={product_id}&filter_by={filter_by}",
+            "uri": "addons?product_id={product_id}&filter_by={filter_by}&plan_code={plan_code}",
             "responseModel": "getResponse",
             "parameters": {
                 "product_id": {
@@ -2365,6 +2377,9 @@
                 "filter_by": {
                     "location": "uri",
                     "default": "AddonStatus.All"
+                },
+                "plan_code": {
+                    "location": "uri"
                 }
             }
         },

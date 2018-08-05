@@ -41,3 +41,6 @@
 
 ### 0.1.3
 - Function name update for getTransactions
+
+### 0.1.4
+- Function name updates and inclusion of parmeters

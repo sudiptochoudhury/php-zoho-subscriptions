@@ -2554,7 +2554,7 @@
 								"{subscription_id}"
 							]
 						},
-						"description": "*Updating the details of a particular subscription*\n\n**PlaceHolder to replace** : \n\n\t`subscription_id`\n\n[API DOC](https://www.zoho.com/subscriptions/api/v1/#Subscriptions_Update_a_subscription)\n\n[HELP DOC](http://zoho.com/subscriptions/help/subscription.html)"
+							"description": "*Updating the details of a particular subscription*\n\n**PlaceHolder to replace** : \n\n\t`subscription_id`\n\n[API DOC](https://www.zoho.com/subscriptions/api/v1/#Subscriptions_Update_a_subscription)\n\n[HELP DOC](http://zoho.com/subscriptions/help/subscription.html)"
 					},
 					"response": []
 				},
@@ -2631,7 +2631,12 @@
 								{
 									"key": "filter_by",
 									"value": "SubscriptionStatus.All"
+								},
+								{
+									"key": "customer_id",
+									"value": "{customer_id}"
 								}
+
 							]
 						},
 						"description": "*Listing all the subscriptions*\n\n**Allowed parameters and its allowed values** :\n\n\t\t1)`filter_by`\t:\t`SubscriptionStatus.(All|IN_PROGRESS|TRIAL|FUTURE|LIVE|UNPAID|PAST_DUE|NON_RENEWING|CANCELLED|CANCELLED_FROM_DUNNING|EXPIRED|CREATION_FAILED|TRIAL_EXPIRED|CANCELLED_THIS_MONTH|CANCELLED_LAST_MONTH|ACTIVE)`\n\t\t\t\t\t\t\t`SubscriptionMode.(ONLINE|OFFLINE)`\n\n\t\t2)`customer_id`\t:\tCustomer ID of a customer. Lists all invoices of a customer.\n\n\n[API DOC](https://www.zoho.com/subscriptions/api/v1/#Subscriptions_List_all_subscriptions)\n\n[HELP DOC](http://zoho.com/subscriptions/help/subscription.html)"
@@ -4205,6 +4210,10 @@
 								{
 									"key": "filter_by",
 									"value": "CouponStatus.All"
+								},
+								{
+									"key": "product_id",
+									"value": "{product_id}"
 								}
 							]
 						},
@@ -5261,6 +5270,14 @@
 								{
 									"key": "filter_by",
 									"value": "AddonStatus.All"
+								},
+								{
+									"key": "product_id",
+									"value": "{product_id}"
+								},
+								{
+									"key": "plan_code",
+									"value": "{plan_code}"
 								}
 							]
 						},
@@ -5305,6 +5322,10 @@
 								{
 									"key": "filter_by",
 									"value": "AddonStatus.All"
+								},
+								{
+									"key": "plan_code",
+									"value": "{plan_code}"
 								}
 							]
 						},
