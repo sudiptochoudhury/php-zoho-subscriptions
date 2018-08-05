@@ -932,7 +932,7 @@
                 }
             }
         },
-        "_getProductPlans": {
+        "getPlans": {
             "httpMethod": "GET",
             "uri": "plans?filter_by={filter_by}",
             "responseModel": "getResponse",

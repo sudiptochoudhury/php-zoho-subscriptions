@@ -55,7 +55,7 @@ class Import extends ParentImport
             'listingallorganizations' => 'getOrganizations',
             '_addNewSubscriptionHostedpages' => 'addNewCustomerNewSubscriptionHostedpages',
             '_deleteSalesPerson' => 'deleteSalesPersons',
-            '_getPlansForProduct' => 'getPlans',
+            '_getProductPlans' => 'getPlans',
             '_addSubscriptionBankAccount' => 'addSubscriptionNewBankAccount',
             '_setSubscriptionOnline' => 'setSubscriptionOffline',
             '_addSubscriptionLineItem' => 'addSubscriptionAddonLineItem',

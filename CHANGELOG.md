@@ -44,3 +44,6 @@
 
 ### 0.1.4
 - Function name updates and inclusion of parmeters
+
+### 0.1.7
+- Update getPlans function

@@ -56,7 +56,7 @@
  * @method	array	activatePlan(array $parameters)	Marking a plan as active
  * @method	array	getPlan(array $parameters)	Retreiving details of a particular plan
  * @method	array	deletePlan(array $parameters)	Delete an existing plan. A plan can only be deleted if it has no transactions associated with it.
- * @method	array	_getProductPlans(array $parameters)	Listing all the plans
+ * @method	array	getPlans(array $parameters)	Listing all the plans
  * @method	array	addSubscriptionNotes(array $parameters)	Notes related to a particular subscription can be added by any user at any time
  * @method	array	reactivateSubscription(array $parameters)	Reactivating a subscription Only a subscription which is in
  * @method	array	deleteSubscriptionNote(array $parameters)	Delete a specific note associated to a particular subscription
