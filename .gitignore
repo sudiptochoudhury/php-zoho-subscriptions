@@ -5,3 +5,4 @@ composer.phar
 composer.lock
 .phpunit.result.cache
 src/zoho/subscriptions/config/backup/
+tests/
