@@ -2917,6 +2917,19 @@
                 }
             }
         },
+        "addInvoiceLineItems": {
+            "httpMethod": "POST",
+            "uri": "invoices/{invoice_id}/lineitems",
+            "responseModel": "getResponse",
+            "parameters": {
+                "invoice_id": {
+                    "location": "uri"
+                },
+                "invoice_items": {
+                    "location": "json"
+                }
+            }
+        },
         "getPricebooks": {
             "httpMethod": "GET",
             "uri": "pricebooks",

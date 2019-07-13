@@ -248,6 +248,7 @@ $resultJson = $subscriptions->addCustomer(['display_name'=> 'Sudipto Choudhury',
 `setInvoicePaymentDate(array)`<br/> \[POST\] /invoices/{invoice_id}/paymentdate  | `invoice_id`<br/>`payment_expected_date`<br/>`stop_reminder_until_payment_expected_date` | *Update expected payment date fop the invoice. Reminders won't be sent till the date specified*<br/>**Placeholders to replace** : <br/> `invoice_id` |
 `voidInvoice(array)`<br/>[ \[POST\] /invoices/{invoice_id}/void ](https://www.zoho.com/subscriptions/api/v1/#Invoices_Convert_to_void) | `invoice_id` | *Making an invoice as void*<br/>**Placeholders to replace** : <br/> `invoice_id`<br/>[API DOC](https://www.zoho.com/subscriptions/api/v1/#Invoices_Convert_to_void) |
 `addInvoiceCredits(array)`<br/> \[POST\] /invoices/{invoice_id}/credits  | `invoice_id`<br/>`apply_creditnotes` | *Use the customer's open credits to the invoice*<br/>**PlaceHolders to be replaced :**<br/> `invoice_id`<br/> |
+`addInvoiceLineItems(array)`<br/> \[POST\] /invoices/{invoice_id}/lineitems  | `invoice_id`<br/>`invoice_items` | *Add items to a pending invoice*<br/>**Placeholders to replace** : <br/> `invoice_id`<br/>[API DOC](https://www.zoho.com/subscriptions/api/v1/#Invoices_Add_items_to_a_pending_invoice) |
 `getPricebooks()`<br/> \[GET\] /pricebooks  | \[none\] | *Retreiving list of all pricebooks* |
 `deleteOrganization(array)`<br/> \[DELETE\] /organizations/{organization_id}  | `organization_id` | *Deleting a particular Organization*<br/>**PlaceHolders to be replaced :**<br/> `organization_id` |
-`getOrganizations()`<br/> \[GET\] /organizations  | \[none\] | *Retieving Details of all Organizations* |
+`getOrganizations()`<br/> \[GET\] /organizations  | \[none\] | *Retrieving Details of all Organizations* |

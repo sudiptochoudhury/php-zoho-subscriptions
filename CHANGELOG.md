@@ -48,4 +48,8 @@
 ### 0.1.7
 - Update getPlans function
 
-### 0.2.1 - update Api Forge
+### 0.2.1 
+- update Api Forge
+
+### 0.2.2 
+- Add items to a pending invoice (addInvoiceLineItems)

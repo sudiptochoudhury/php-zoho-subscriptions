@@ -6634,6 +6634,46 @@
 						"description": "*Use the customer's open credits to the invoice*\n\n**PlaceHolders to be replaced :**\n\n\t`invoice_id`\n\t\n[API DOC]()\n\n[HELP DOC]()"
 					},
 					"response": []
+				},
+				{
+					"name": "Add items to a pending invoice",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-com-zoho-subscriptions-organizationid",
+								"value": "{{organizationid}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "Zoho-authtoken {{authtoken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"invoice_items\": \"Line Items\"\n}"
+						},
+						"url": {
+							"raw": "https://{{domain-url}}/api/v1/invoices/{invoice_id}/lineitems",
+							"protocol": "https",
+							"host": [
+								"{{domain-url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"invoices",
+								"{invoice_id}",
+								"lineitems"
+							]
+						},
+						"description": "*Add items to a pending invoice*\n\n**Placeholders to replace** : \n\n\t`invoice_id`\n\n[API DOC](https://www.zoho.com/subscriptions/api/v1/#Invoices_Add_items_to_a_pending_invoice)\n\n[HELP DOC]()"
+					},
+					"response": []
 				}
 			]
 		},

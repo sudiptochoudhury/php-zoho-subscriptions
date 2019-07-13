@@ -60,6 +60,7 @@ class Import extends ParentImport
             '_setSubscriptionOnline' => 'setSubscriptionOffline',
             '_addSubscriptionLineItem' => 'addSubscriptionAddonLineItem',
             '_cancelSubscriptionNow' => 'cancelSubscription',
+            'addInvoiceInvoiceItems' => 'addInvoiceLineItems',
         ];
 
         $apiName = $overwriteMatches[$apiName] ?? $overwriteMatches[strtolower($apiName)] ?? $apiName;
