@@ -185,6 +185,7 @@ use SudiptoChoudhury\Support\Forge\Api\Client as ApiForge;
  */
 class Api extends ApiForge
 {
+    protected $loggerFile = __DIR__ . '/zoho-subscriptions-api-calls.log';
 
     protected $DEFAULT_API_JSON_PATH = './config/subscriptions.json';
     protected $DEFAULT_SOURCE_JSON_PATH = './config/postman.json';
@@ -193,13 +194,19 @@ class Api extends ApiForge
     protected $DEFAULTS = [
         'authtoken' => '',
         'zohoOrgId' => '',
+        'tld' => 'com', // eu, in, com.au
         'client' => [
-            'base_uri' => 'https://subscriptions.zoho.com/api/v1/',
+            'base_uri' => 'https://subscriptions.zoho.{{tld}}/api/v1/',
             'verify' => false,
             'headers' => [
                 'Authorization' => 'Zoho-authtoken {{authtoken}}',
                 'X-com-zoho-subscriptions-organizationid' => "{{zohoOrgId}}",
             ],
+        ],
+        'log' => false,
+        'settings' => [
+            'responseHandler' => null,
+            'requestHandler' => null,
         ],
     ];
 
