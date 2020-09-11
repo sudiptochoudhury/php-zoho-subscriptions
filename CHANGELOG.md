@@ -1,5 +1,9 @@
 ### Changelog
 
+### 0.3.0 - 11 September 2020 
+- Allow use of oauth token
+
+
 ### 0.2.3 - 27 March 2020 
 - Allow option to set `tld` property - top level domain  `com` (default), `eu`, `in`, `com.au` for API host
 

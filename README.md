@@ -16,6 +16,27 @@ use SudiptoChoudhury\Zoho\Subscriptions\Api;
 ...
 
 $subscriptions = new Api([
+                'oauthtoken' => '<<Zoho Subscriptions OAuth Token>>', // https://www.zoho.com/subscriptions/api/v1/#oauth
+                'zohoOrgId' => '<<Zoho Organization ID>>',
+            ]);
+
+
+$resultJson = $subscriptions->addCustomer($data); // create a customer
+
+$resultJson = $subscriptions->addSubscription($data); // create a subscription
+ 
+ 
+```
+
+> Auth Token (Will be deprecated soon), but you can still use it.
+
+```php
+
+use SudiptoChoudhury\Zoho\Subscriptions\Api;
+
+...
+
+$subscriptions = new Api([
                 'authtoken' => '<<Zoho Subscriptions Auth Token>>', // https://accounts.zoho.com/apiauthtoken/nb/create
                 'zohoOrgId' => '<<Zoho Organization ID>>',
             ]);
@@ -52,10 +73,39 @@ composer require sudiptochoudhury/php-zoho-subscriptions
 ```
 
 
-## Setting up
+## Setting up Authentication 
 
-All you need to do is to retrieve from your Zoho account and set the AuthToken and Organization ID in the constructor. 
+> **Get Organization ID** Before you start, read https://www.zoho.com/subscriptions/api/v1/#organization-id to know your Organization ID.  
+
+
+### Setup OAuth and use oauth token
+
+Follow instructions from https://www.zoho.com/subscriptions/api/v1/#oauth and get the `oathtoken`. 
+
+Pass the oauth token via the constructor.
+
 ```php
+
+use SudiptoChoudhury\Zoho\Subscriptions\Api;
+
+
+new Api([
+    'oauthtoken' => '<<Zoho Subscriptions OAuth Token>>', // https://www.zoho.com/subscriptions/api/v1/#oauth
+    'zohoOrgId' => '<<Zoho Organization ID>>',
+]);
+```
+ 
+
+### Or Use AuthToken 
+> will be deprecated soon
+
+Crete and retrieve AuthToken from https://accounts.zoho.com/apiauthtoken/nb/create and set the AuthToken and Organization ID in the constructor. 
+
+```php
+
+use SudiptoChoudhury\Zoho\Subscriptions\Api;
+
+
 new Api([
     'authtoken' => '<<Zoho Subscriptions Auth Token>>', // https://accounts.zoho.com/apiauthtoken/nb/create
     'zohoOrgId' => '<<Zoho Organization ID>>',

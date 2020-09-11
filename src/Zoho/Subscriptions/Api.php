@@ -185,6 +185,9 @@ use SudiptoChoudhury\Support\Forge\Api\Client as ApiForge;
  */
 class Api extends ApiForge
 {
+    // deprecated Authorization header
+    const AUTHTOKEN_HEADER = 'Zoho-authtoken {{authtoken}}';
+
     protected $loggerFile = __DIR__ . '/zoho-subscriptions-api-calls.log';
 
     protected $DEFAULT_API_JSON_PATH = './config/subscriptions.json';
@@ -193,13 +196,14 @@ class Api extends ApiForge
 
     protected $DEFAULTS = [
         'authtoken' => '',
+        'oauthtoken' => '',
         'zohoOrgId' => '',
         'tld' => 'com', // eu, in, com.au
         'client' => [
             'base_uri' => 'https://subscriptions.zoho.{{tld}}/api/v1/',
             'verify' => false,
             'headers' => [
-                'Authorization' => 'Zoho-authtoken {{authtoken}}',
+                'Authorization' => 'Zoho-oauthtoken {{oauthtoken}}',
                 'X-com-zoho-subscriptions-organizationid' => "{{zohoOrgId}}",
             ],
         ],
@@ -210,5 +214,25 @@ class Api extends ApiForge
         ],
     ];
 
+    /**
+     * @param array $options
+     *
+     * @return \SudiptoChoudhury\Zoho\Subscriptions\Api
+     */
+    protected function setOptions($options = [])
+    {
+        // authtoken is deprecated, apply it until discontinued
+        $authtoken = $options['authtoken'] ?? null;
+        if ($authtoken) {
+            $headers = $this->DEFAULTS['client']['headers'] ?? null;
+            if ($headers) {
+                $auth = $headers['Authorization'] ?? null;
+                if ($auth) {
+                    $this->DEFAULTS['client']['headers']['Authorization'] = static::AUTHTOKEN_HEADER;
+                }
+            }
+        }
+        return parent::setOptions($options);
+    }
 
 }

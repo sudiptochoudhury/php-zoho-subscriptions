@@ -23,7 +23,7 @@
     },
     "autoload": {
         "psr-4": {
-            "SudiptoChoudhury\\": "src/"
+            "SudiptoChoudhury\\Zoho\\Subscriptions\\": "src/Zoho/Subscriptions"
         }
     },
     "autoload-dev": {
