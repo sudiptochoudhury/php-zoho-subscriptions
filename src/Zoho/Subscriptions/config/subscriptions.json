@@ -24,6 +24,12 @@
                 "customer_id": {
                     "location": "json"
                 },
+                "pricebook_id": {
+                    "location": "json"
+                },
+                "customer": {
+                    "location": "json"
+                },
                 "contactpersons": {
                     "location": "json"
                 },
@@ -46,6 +52,9 @@
                     "location": "json"
                 },
                 "additional_param": {
+                    "location": "json"
+                },
+                "salesperson_name": {
                     "location": "json"
                 },
                 "redirect_url": {
