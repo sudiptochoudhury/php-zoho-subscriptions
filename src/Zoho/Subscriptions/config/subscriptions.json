@@ -952,6 +952,16 @@
                 }
             }
         },
+
+        "createSubscription": {
+            "httpMethod": "POST",
+            "uri": "subscriptions",
+            "responseModel": "getResponse",
+            "additionalParameters": {
+                "location": "json"
+            }
+        },
+
         "addSubscriptionNotes": {
             "httpMethod": "POST",
             "uri": "subscriptions/{subscription_id}/notes",
