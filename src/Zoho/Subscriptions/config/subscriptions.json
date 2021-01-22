@@ -1090,6 +1090,57 @@
             "parameters": {
                 "subscription_id": {
                     "location": "uri"
+                },
+                "plan": {
+                    "location": "json"
+                },
+                "addons": {
+                    "location": "json"
+                },
+                "coupon_code": {
+                    "location": "json"
+                },
+                "payment_terms": {
+                    "location": "json"
+                },
+                "payment_terms_label": {
+                    "location": "json"
+                },
+                "starts_at": {
+                    "location": "json"
+                },
+                "exchange_rate": {
+                    "location": "json"
+                },
+                "salesperson_name": {
+                    "location": "json"
+                },
+                "salesperson_id": {
+                    "location": "json"
+                },
+                "reference_id": {
+                    "location": "json"
+                },
+                "custom_fields": {
+                    "location": "json"
+                },
+                "auto_collect": {
+                    "location": "json"
+                },
+                "card_id": {
+                    "location": "json"
+                },
+                "payment_gateways": {
+                    "location": "json"
+                },
+                "end_of_term": {
+                    "location": "json"
+                },
+                "contactpersons": {
+                    "location": "json"
+                },
+                "template_id": {
+                    "location": "json"
                 }
             }
         },
