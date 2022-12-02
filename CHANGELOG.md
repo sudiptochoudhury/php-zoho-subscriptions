@@ -1,5 +1,9 @@
 ### Changelog
 
+### 0.4.0 - 02 December 2020 
+- Add `createSubscription` method
+
+
 ### 0.3.0 - 11 September 2020 
 - Allow use of oauth token
 
