@@ -3000,6 +3000,19 @@
                 }
             }
         },
+        "deleteInvoiceLineItem": {
+            "httpMethod": "DELETE",
+            "uri": "invoices/{invoice_id}/lineitems/{item_id}",
+            "responseModel": "getResponse",
+            "parameters": {
+                "invoice_id": {
+                    "location": "uri"
+                },
+                "item_id": {
+                    "location": "uri"
+                }
+            }
+        },
         "getPricebooks": {
             "httpMethod": "GET",
             "uri": "pricebooks",
