@@ -168,6 +168,7 @@
  * @method	array	voidInvoice(array $parameters)	Making an invoice as void
  * @method	array	addInvoiceCredits(array $parameters)	Use the customer's open credits to the invoice
  * @method	array	addInvoiceLineItems(array $parameters)	Add items to a pending invoice
+ * @method	array	deleteInvoiceLineItem(array $parameters)	Delete item from a pending invoice
  * @method	array	getPricebooks()	Retreiving list of all pricebooks
  * @method	array	deleteOrganization(array $parameters)	Deleting a particular Organization
  * @method	array	getOrganizations()	Retieving Details of all Organizations
