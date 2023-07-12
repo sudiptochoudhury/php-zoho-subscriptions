@@ -1,5 +1,8 @@
 ### Changelog
 
+### 0.4.1 - 12 July 2023
+- Add `deleteInvoiceLineItem` method
+
 ### 0.4.0 - 02 December 2020 
 - Add `createSubscription` method
 
