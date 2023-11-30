@@ -1162,7 +1162,7 @@
         },
         "getSubscriptions": {
             "httpMethod": "GET",
-            "uri": "subscriptions?filter_by={filter_by}&customer_id={customer_id}",
+            "uri": "subscriptions?filter_by={filter_by}&customer_id={customer_id}&page={page}&per_page={per_page}",
             "responseModel": "getResponse",
             "parameters": {
                 "filter_by": {
@@ -1170,6 +1170,12 @@
                     "default": "SubscriptionStatus.All"
                 },
                 "customer_id": {
+                    "location": "uri"
+                },
+                "page": {
+                    "location": "uri"
+                },
+                "per_page": {
                     "location": "uri"
                 }
             }
