@@ -218,12 +218,18 @@
         },
         "getCustomers": {
             "httpMethod": "GET",
-            "uri": "customers?filter_by={filter_by}",
+            "uri": "customers?filter_by={filter_by}&page={page}&per_page={per_page}",
             "responseModel": "getResponse",
             "parameters": {
                 "filter_by": {
                     "location": "uri",
                     "default": "Status.All"
+                },
+                "page": {
+                    "location": "uri"
+                },
+                "per_page": {
+                    "location": "uri"
                 }
             }
         },
