@@ -2751,12 +2751,21 @@
         },
         "getInvoices": {
             "httpMethod": "GET",
-            "uri": "invoices?filter_by={filter_by}",
+            "uri": "invoices?filter_by={filter_by}&customer_id={customer_id}&page={page}&per_page={per_page}",
             "responseModel": "getResponse",
             "parameters": {
                 "filter_by": {
-                    "location": "uri",
-                    "default": "Status.All"
+                  "location": "uri",
+                  "default": "Status.All"
+                },
+                "customer_id": {
+                    "location": "uri"
+                },
+                "page": {
+                    "location": "uri"
+                },
+                "per_page": {
+                    "location": "uri"
                 }
             }
         },
