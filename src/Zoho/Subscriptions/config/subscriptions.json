@@ -2725,6 +2725,19 @@
                 }
             }
         },
+        "updateInvoice": {
+            "httpMethod": "PUT",
+            "uri": "invoices/{invoice_id}",
+            "responseModel": "getResponse",
+            "parameters": {
+                "invoice_id": {
+                    "location": "uri"
+                },
+                "invoice_items": {
+                    "location": "json"
+                }
+            }
+        },
         "downloadInvoiceAsPdf": {
             "httpMethod": "GET",
             "uri": "invoices/{invoice_id}?accept={accept}",
