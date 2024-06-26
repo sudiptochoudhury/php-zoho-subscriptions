@@ -200,7 +200,7 @@ class Api extends ApiForge
         'zohoOrgId' => '',
         'tld' => 'com', // eu, in, com.au
         'client' => [
-            'base_uri' => 'https://subscriptions.zoho.{{tld}}/api/v1/',
+            'base_uri' => 'https://www.zohoapis.{{tld}}/billing/v1/',
             'verify' => false,
             'headers' => [
                 'Authorization' => 'Zoho-oauthtoken {{oauthtoken}}',
