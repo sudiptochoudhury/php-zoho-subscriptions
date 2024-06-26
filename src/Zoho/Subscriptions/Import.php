@@ -204,7 +204,7 @@ class Import extends ParentImport
             "addinvoicessent" => "setInvoicesAsSent",
             "addinvoicepaymentreminderenable" => "enableInvoicePaymentReminder",
             "addinvoicesent" => "setInvoiceAsSent",
-            "addinvoiceconvertoopen" => "openInvoice",
+            "addinvoiceconverttoopen" => "openInvoice",
             "emailaninvoice" => "emailInvoice",
             "addinvoicepaymentreminderdisable" => "disableInvoicePaymentReminder",
             "getbankaccountpendinginvoices" => "getBankAccountPendingInvoices",
