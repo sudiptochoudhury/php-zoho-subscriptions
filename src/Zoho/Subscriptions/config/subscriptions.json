@@ -2817,7 +2817,7 @@
         },
         "openInvoice": {
             "httpMethod": "POST",
-            "uri": "invoices/{invoice_id}/convertoopen",
+            "uri": "invoices/{invoice_id}/converttoopen",
             "responseModel": "getResponse",
             "parameters": {
                 "invoice_id": {

@@ -6040,7 +6040,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://{{domain-url}}/api/v1/invoices/{invoice_id}/convertoopen",
+							"raw": "https://{{domain-url}}/api/v1/invoices/{invoice_id}/converttoopen",
 							"protocol": "https",
 							"host": [
 								"{{domain-url}}"
@@ -6050,7 +6050,7 @@
 								"v1",
 								"invoices",
 								"{invoice_id}",
-								"convertoopen"
+								"converttoopen"
 							]
 						},
 						"description": "*Change the status of an invoice to open*\n\n**Placeholders to replace** : \n\n\t`invoice_id`\n\n[API DOC](https://www.zoho.com/subscriptions/api/v1/#Invoices_Convert_to_open)\n\n[HELP DOC]()"
